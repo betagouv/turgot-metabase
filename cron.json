@@ -1,0 +1,7 @@
+{
+  "jobs": [
+    {
+      "command": "0 2 * * * ./sync_tables.sh"
+    }
+  ]
+}
