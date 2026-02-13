@@ -13,5 +13,5 @@ L'idée est donc de déployer ce script sur l'app `turgot-metabase-data`.
 scalingo --app turgot-metabase-data --region osc-secnum-fr1 run bash ./sync_tables.sh
 
 # Sync depuis staging vers une review app
-scalingo --app turgot-metabase-data --region osc-secnum-fr1 run bash DEST_DB_URL=<***> ./sync_review_app.sh 
+scalingo --app gsl-staging-pr525 --region osc-secnum-fr1 run bash ./sync_review_app.sh
 ```

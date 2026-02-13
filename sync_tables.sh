@@ -1,6 +1,6 @@
 #!/bin/bash
 SRC_DB_URL="${SRC_DB_URL:-$PROD_DATABASE_URL}"
-DEST_DB_URL="${DEST_DB_URL:-$SCALINGO_POSTGRESQL_URL}"
+DEST_DB_URL="$SCALINGO_POSTGRESQL_URL"
 
 dbclient-fetcher psql
 pg_dump \
